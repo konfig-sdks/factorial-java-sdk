@@ -1,0 +1,120 @@
+package com.konfigthis.client;
+
+import com.konfigthis.client.api.ApplicationApi;
+import com.konfigthis.client.api.AttendanceApi;
+import com.konfigthis.client.api.BreakApi;
+import com.konfigthis.client.api.CandidateApi;
+import com.konfigthis.client.api.CompensationApi;
+import com.konfigthis.client.api.ContractApi;
+import com.konfigthis.client.api.ContractVersionApi;
+import com.konfigthis.client.api.CustomFieldApi;
+import com.konfigthis.client.api.CustomFieldValueApi;
+import com.konfigthis.client.api.CustomTableApi;
+import com.konfigthis.client.api.DocumentApi;
+import com.konfigthis.client.api.EmployeeApi;
+import com.konfigthis.client.api.EventApi;
+import com.konfigthis.client.api.ExpenseApi;
+import com.konfigthis.client.api.FamilySituationApi;
+import com.konfigthis.client.api.FolderApi;
+import com.konfigthis.client.api.HolidayApi;
+import com.konfigthis.client.api.IntegrationApi;
+import com.konfigthis.client.api.IntegrationCodeApi;
+import com.konfigthis.client.api.KeyApi;
+import com.konfigthis.client.api.LeaveApi;
+import com.konfigthis.client.api.LegalEntityApi;
+import com.konfigthis.client.api.LocationApi;
+import com.konfigthis.client.api.MessageApi;
+import com.konfigthis.client.api.PolicyApi;
+import com.konfigthis.client.api.PostApi;
+import com.konfigthis.client.api.ShiftApi;
+import com.konfigthis.client.api.SupplementApi;
+import com.konfigthis.client.api.TableApi;
+import com.konfigthis.client.api.TaskApi;
+import com.konfigthis.client.api.TaxonomyApi;
+import com.konfigthis.client.api.TeamApi;
+import com.konfigthis.client.api.UserApi;
+import com.konfigthis.client.api.WebhookApi;
+import com.konfigthis.client.api.WorkplaceApi;
+
+public class Factorial {
+    private ApiClient apiClient;
+    public final ApplicationApi application;
+    public final AttendanceApi attendance;
+    public final BreakApi break;
+    public final CandidateApi candidate;
+    public final CompensationApi compensation;
+    public final ContractApi contract;
+    public final ContractVersionApi contractVersion;
+    public final CustomFieldApi customField;
+    public final CustomFieldValueApi customFieldValue;
+    public final CustomTableApi customTable;
+    public final DocumentApi document;
+    public final EmployeeApi employee;
+    public final EventApi event;
+    public final ExpenseApi expense;
+    public final FamilySituationApi familySituation;
+    public final FolderApi folder;
+    public final HolidayApi holiday;
+    public final IntegrationApi integration;
+    public final IntegrationCodeApi integrationCode;
+    public final KeyApi key;
+    public final LeaveApi leave;
+    public final LegalEntityApi legalEntity;
+    public final LocationApi location;
+    public final MessageApi message;
+    public final PolicyApi policy;
+    public final PostApi post;
+    public final ShiftApi shift;
+    public final SupplementApi supplement;
+    public final TableApi table;
+    public final TaskApi task;
+    public final TaxonomyApi taxonomy;
+    public final TeamApi team;
+    public final UserApi user;
+    public final WebhookApi webhook;
+    public final WorkplaceApi workplace;
+
+    public Factorial() {
+        this(null);
+    }
+
+    public Factorial(Configuration configuration) {
+        this.apiClient = new ApiClient(null, configuration);
+        this.application = new ApplicationApi(this.apiClient);
+        this.attendance = new AttendanceApi(this.apiClient);
+        this.break = new BreakApi(this.apiClient);
+        this.candidate = new CandidateApi(this.apiClient);
+        this.compensation = new CompensationApi(this.apiClient);
+        this.contract = new ContractApi(this.apiClient);
+        this.contractVersion = new ContractVersionApi(this.apiClient);
+        this.customField = new CustomFieldApi(this.apiClient);
+        this.customFieldValue = new CustomFieldValueApi(this.apiClient);
+        this.customTable = new CustomTableApi(this.apiClient);
+        this.document = new DocumentApi(this.apiClient);
+        this.employee = new EmployeeApi(this.apiClient);
+        this.event = new EventApi(this.apiClient);
+        this.expense = new ExpenseApi(this.apiClient);
+        this.familySituation = new FamilySituationApi(this.apiClient);
+        this.folder = new FolderApi(this.apiClient);
+        this.holiday = new HolidayApi(this.apiClient);
+        this.integration = new IntegrationApi(this.apiClient);
+        this.integrationCode = new IntegrationCodeApi(this.apiClient);
+        this.key = new KeyApi(this.apiClient);
+        this.leave = new LeaveApi(this.apiClient);
+        this.legalEntity = new LegalEntityApi(this.apiClient);
+        this.location = new LocationApi(this.apiClient);
+        this.message = new MessageApi(this.apiClient);
+        this.policy = new PolicyApi(this.apiClient);
+        this.post = new PostApi(this.apiClient);
+        this.shift = new ShiftApi(this.apiClient);
+        this.supplement = new SupplementApi(this.apiClient);
+        this.table = new TableApi(this.apiClient);
+        this.task = new TaskApi(this.apiClient);
+        this.taxonomy = new TaxonomyApi(this.apiClient);
+        this.team = new TeamApi(this.apiClient);
+        this.user = new UserApi(this.apiClient);
+        this.webhook = new WebhookApi(this.apiClient);
+        this.workplace = new WorkplaceApi(this.apiClient);
+    }
+
+}
